@@ -6,11 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sinusoidal Ball</title>
     <style>
-     
+        body {
+            background: linear-gradient(to right, deeppink, yellow, );
+            background-size: 400% 400%;
+            animation: changecolor 4s infinite;
+        }
 
-       
+        @keyframes changecolor {
+            0% {
+                background-position: 0% 50%;
+            }
 
-         .bull {
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
+
+        }
+
+        .bull {
             transform: translateY(11px);
         }
 
@@ -29,7 +46,7 @@
 
         .two {
             transform: translatex(600px) translateY(75vh);
-        } 
+        }
 
 
 
@@ -90,7 +107,7 @@
             100% {
                 transform: translatex(1600px) translatey(5vh) rotate(3600deg);
             }
-        } 
+        }
     </style>
 </head>
 
