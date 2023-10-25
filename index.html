@@ -6,68 +6,77 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sinusoidal Ball</title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
+     
+
+       
+
+         .bull {
+            transform: translateY(11px);
+        }
+
+        .bas {
+            width: 100px;
+
+
+            animation: bounce 15s linear infinite;
         }
 
         .plat {
             background-color: brown;
             height: 20px;
-            width: 97px;
-
-
-        }
-
-        .bas {
             width: 100px;
-            animation: bounce 15s linear infinite;
-
         }
+
+        .two {
+            transform: translatex(600px) translateY(75vh);
+        } 
+
+
 
         @keyframes bounce {
             0% {
-                transform: translatex(0) translatey(0px);
+                transform: translatex(0) translatey(0px) rotate(0deg);
             }
 
             10% {
-                transform: translatex(100px) translatey(0px) rotate(360deg);
+                transform: translatex(97px) translatey(0px) rotate(160deg);
             }
 
             20% {
-                transform: translatex(100px) translatey(540px);
+                transform: translatex(100px) translatey(100vh) rotate(0deg);
+
             }
 
             30% {
-                transform: translatex(200px) translatey(50px) rotate(360deg);
+                transform: translatex(300px) translatey(50px) rotate(700deg);
             }
 
             40% {
-                transform: translatex(200px) translatey(540px);
+                transform: translatex(300px) translatey(100vh) rotate(0deg);
             }
 
             50% {
-                transform: translatex(300px) translatey(150px);
+                transform: translatex(400px) translatey(150px) rotate(500deg);
             }
 
             60% {
-                transform: translatex(300px) translatey(540px);
+                transform: translatex(400px) translatey(100vh) rotate(0deg);
             }
 
             70% {
-                transform: translatex(400px) translatey(300px);
+                transform: translatex(500px) translatey(300px) rotate(700deg);
             }
 
             80% {
-                transform: translatex(400px) translatey(540px);
+                transform: translatex(500px) translatey(100vh) rotate(0deg);
             }
 
             85% {
-                transform: translatex(500px) translatey(450px);
+                transform: translatex(600px) translatey(450px) rotate(200deg);
             }
 
             90% {
-                transform: translatex(500px) translatey(540px);
+                transform: translatex(600px) translatey(100vh) rotate(0deg);
             }
 
             /* 95% {
@@ -79,15 +88,16 @@
             } */
 
             100% {
-                transform: translatex(1600px) translatey(540px) rotate(360deg);
+                transform: translatex(1600px) translatey(5vh) rotate(3600deg);
             }
-        }
+        } 
     </style>
 </head>
 
 <body>
-    <div class="ball"><img class="bas" src="img/bas.png"></div>
+    <div class="bull"><img class="bas" src="img/bas.png" alt=""></div>
     <div class="plat"></div>
+    <div class="plat two"></div>
 </body>
 
 </html>
