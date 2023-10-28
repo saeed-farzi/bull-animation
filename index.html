@@ -7,9 +7,10 @@
     <title>Sinusoidal Ball</title>
     <style>
         body {
-            background: linear-gradient(to right, deeppink, yellow, );
+            background: linear-gradient(to right, #09ff01,red ,rgb(226, 255, 4), #00eeff );
+
             background-size: 400% 400%;
-            animation: changecolor 4s infinite;
+            animation: changecolor 14s infinite;
         }
 
         @keyframes changecolor {
@@ -53,59 +54,54 @@
         @keyframes bounce {
             0% {
                 transform: translatex(0) translatey(0px) rotate(0deg);
+                transition: .1s;
             }
 
             10% {
-                transform: translatex(97px) translatey(0px) rotate(160deg);
+                transform: translatex(97px) translatey(0px);
             }
 
             20% {
-                transform: translatex(100px) translatey(100vh) rotate(0deg);
+                transform: translatex(100px) translatey(100vh);
 
             }
 
             30% {
-                transform: translatex(300px) translatey(50px) rotate(700deg);
+                transform: translatex(300px) translatey(50px);
             }
 
             40% {
-                transform: translatex(300px) translatey(100vh) rotate(0deg);
+                transform: translatex(300px) translatey(100vh);
             }
 
             50% {
-                transform: translatex(400px) translatey(150px) rotate(500deg);
+                transform: translatex(400px) translatey(150px);
             }
 
             60% {
-                transform: translatex(400px) translatey(100vh) rotate(0deg);
+                transform: translatex(400px) translatey(100vh);
             }
 
             70% {
-                transform: translatex(500px) translatey(300px) rotate(700deg);
+                transform: translatex(500px) translatey(300px);
             }
 
             80% {
-                transform: translatex(500px) translatey(100vh) rotate(0deg);
+                transform: translatex(500px) translatey(100vh);
             }
 
             85% {
-                transform: translatex(600px) translatey(450px) rotate(200deg);
+                transform: translatex(600px) translatey(450px);
             }
 
             90% {
-                transform: translatex(600px) translatey(100vh) rotate(0deg);
+                transform: translatex(600px) translatey(100vh);
             }
 
-            /* 95% {
-                transform: translatex(540px) translatey(540px);
-            } */
 
-            /* 97% {
-                transform: translatex(600px) translatey(540px);
-            } */
 
             100% {
-                transform: translatex(1600px) translatey(5vh) rotate(3600deg);
+                transform: translatex(1600px) translatey(5vh) rotate(5turn);
             }
         }
     </style>
